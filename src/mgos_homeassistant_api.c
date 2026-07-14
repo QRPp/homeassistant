@@ -45,6 +45,11 @@ struct ha_component_data {
                        no_stat_t : true
                      },
                      {name : "fan", no_dev_cla : true, no_val_tpl : true},
+                     {
+                       name : "humidifier",
+                       json_config_additional_payload : "\"p\":\"humidifier\",\"hum_cmd_t\":\"~/cmd\"",
+                       no_val_tpl : true
+                     },
                      {name : "light", no_dev_cla : true, no_val_tpl : true},
                      {name : "lock", no_dev_cla : true},
                      {name : "sensor", no_cmd_t : true},
